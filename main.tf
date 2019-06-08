@@ -39,7 +39,7 @@ module "alb" {
   vpc_id = "${module.vpc.vpc_id}"
   subnet_ids = "${module.vpc.public_subnet_ids}"
   security_groups = "${module.vpc.security_groups}"
-  # certificate_arn = "${module.dns.acm_certificate_arn}"
+  certificate_arn = "${module.dns.acm_certificate_arn}"
 
 }
 

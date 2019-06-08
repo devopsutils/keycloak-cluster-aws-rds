@@ -13,13 +13,13 @@ resource "aws_alb" "main" {
 
 resource "aws_alb_listener" "front_end_tls" {
   load_balancer_arn = "${aws_alb.main.id}"
-  # port              = "443"
-  # protocol          = "HTTPS"
-  port = "80"
-  protocol = "HTTP"
+  port              = "443"
+  protocol          = "HTTPS"
+  # port = "80"
+  # protocol = "HTTP"
 
-  # ssl_policy = "ELBSecurityPolicy-2015-05"
-  # certificate_arn = "${var.certificate_arn}"
+  ssl_policy = "ELBSecurityPolicy-2015-05"
+  certificate_arn = "${var.certificate_arn}"
 
   default_action {
     target_group_arn = "${aws_alb_target_group.main.id}"

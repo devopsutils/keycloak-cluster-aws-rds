@@ -29,4 +29,4 @@ variable "subnet_ids" {}
 
 variable "security_groups" {}
 
-# variable "certificate_arn" {}
+variable "certificate_arn" {}

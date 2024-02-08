@@ -53,7 +53,7 @@ This deployment assumes that you have an existing Route 53 zone setup for your d
 
 #### RDS Credentials
 
-Due to shortcomings in the way that the KeyCloak Docker image and underlying application server work, RDS credentials are provided as part of the ECS task definition and made available to KeyClok as environment variables.  This is less than ideal, but I'm not knowledgeable enough on Terraform to come up with a better way.  If you have one, feel free to raise an issue or submit a pull request!
+Due to shortcomings in the way that the KeyCloak Docker image and underlying application server work, RDS credentials are provided as part of the ECS task definition and made available to KeyCloak as environment variables.  This is less than ideal, but I'm not knowledgeable enough on Terraform to come up with a better way.  If you have one, feel free to raise an issue or submit a pull request!
 
 #### RDS Database Engine
 
